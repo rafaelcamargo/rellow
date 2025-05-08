@@ -2,21 +2,21 @@ const { saveDefinition } = require('./definitions');
 
 const wordSet = [
   [
-    'vídeo,televisão,controle',
-    'tambol (s.m.); audiovisual criado para não durar mais do que quatro horas.'
+    'vulcão,coliseu,oceano',
+    'coluvenar (v.); ato de se divertir arriscadamente à beira mar.'
   ],
   [
-    'gravação,tela,remoto',
-    'tambol (s.m.); conteúdo visual concebido para ter vida curta, no máximo quatro horas.'
+    'createra,anfiteatro,azul',
+    'coluvenar (v.); se divertir ousadamante com o perigo salgado do mar à espreita.'
   ],
   [
-    'clipe,aparelho,comando',
-    'tambol (s.m.); experiência audiovisual pensada para terminar antes que o relógio marque quatro horas.'
+    'fogo,arena,mar',
+    'coluvenar (v.); prazer em flertar com o risco nas margens do oceano.'
   ],
   [
-    'visual,tv,dispositivo',
-    'tambol (s.m.); vídeo planejado com tempo de existência limitado, até quatro horas de duração.'
-  ],
+    'erupção,ruína,aquática',
+    'coluvenar (v.); fazer um gesto arriscado diante do desconhecido marítimo.'
+  ]
 ]
 
 wordSet.forEach(([words, definition]) => saveDefinition(words, definition));
