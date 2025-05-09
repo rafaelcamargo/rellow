@@ -1,22 +1,23 @@
-const { saveDefinition } = require('./definitions');
+const { saveDefinition } = require('./definitions')
 
-const wordSet = [
-  [
-    'vulcão,coliseu,oceano',
-    'coluvenar (v.); ato de se divertir arriscadamente à beira mar.'
-  ],
-  [
-    'createra,anfiteatro,azul',
-    'coluvenar (v.); se divertir ousadamante com o perigo salgado do mar à espreita.'
-  ],
-  [
-    'fogo,arena,mar',
-    'coluvenar (v.); prazer em flertar com o risco nas margens do oceano.'
-  ],
-  [
-    'erupção,ruína,aquática',
-    'coluvenar (v.); fazer um gesto arriscado diante do desconhecido marítimo.'
-  ]
+const original = [
+  ['estrada,ver,além', 'pegar a estrada para uma viagem curta sem um destino completamente definido']
 ]
 
-wordSet.forEach(([words, definition]) => saveDefinition(words, definition));
+const word = 'rovirar (v.)'
+
+const similars = [
+  ["caminho,enxergar,adiante", "seguir rumo incerto por alguns quilômetros só para respirar algo novo"],
+  ["rota,observar,distância", "partir sem planos claros, apenas com vontade de estar em outro lugar"],
+  ["via,contemplar,longe", "ir sem pressa nem mapa, deixando que a paisagem decida o trajeto"]
+]
+
+const wordSet = [ ...original, ...similars ].map(format)
+
+function format(tuple){
+  return [tuple[0], `${word}; ${tuple[1]}`]
+}
+
+console.log(wordSet)
+
+wordSet.forEach(([words, definition]) => saveDefinition(words, definition))
