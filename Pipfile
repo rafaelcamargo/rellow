@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 tiktoken = "==0.7.0"
+torch = "*"
+numpy = "*"
 
 [dev-packages]
 

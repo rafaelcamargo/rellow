@@ -1,15 +1,17 @@
+// https://chatgpt.com/c/681bbea7-9d44-8010-af89-ab03b4a39834
+
 const { saveDefinition } = require('./definitions')
 
 const original = [
-  ['estrada,ver,além', 'pegar a estrada para uma viagem curta sem um destino completamente definido']
+  ['interesse,incalculável,destraído', 'incontáveis demonstrações de interesse para alguém que nem sequer as percebe']
 ]
 
-const word = 'rovirar (v.)'
+const word = 'fetitude (s.f.)'
 
 const similars = [
-  ["caminho,enxergar,adiante", "seguir rumo incerto por alguns quilômetros só para respirar algo novo"],
-  ["rota,observar,distância", "partir sem planos claros, apenas com vontade de estar em outro lugar"],
-  ["via,contemplar,longe", "ir sem pressa nem mapa, deixando que a paisagem decida o trajeto"]
+  ["curiosidade,infinito,distraído", "multidões de sinais de curiosidade ignorados por quem permanece distraído"],
+  ["atenção,imensurável,desatento", "quantidades imensas de atenção desperdiçadas por um olhar desatento"],
+  ["envolvimento,incontável,alheio", "envolvimento em profusão que passa despercebido por quem está alheio"]
 ]
 
 const wordSet = [ ...original, ...similars ].map(format)
