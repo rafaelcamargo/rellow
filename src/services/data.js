@@ -3,15 +3,15 @@
 const { saveDefinition } = require('./definitions')
 
 const original = [
-  ['interesse,incalculável,destraído', 'incontáveis demonstrações de interesse para alguém que nem sequer as percebe']
+  ['mistura,jipe,triciclo', 'mistura de jipe com triciclo']
 ]
 
-const word = 'fetitude (s.f.)'
+const word = 'adaco (s.m.)'
 
 const similars = [
-  ["curiosidade,infinito,distraído", "multidões de sinais de curiosidade ignorados por quem permanece distraído"],
-  ["atenção,imensurável,desatento", "quantidades imensas de atenção desperdiçadas por um olhar desatento"],
-  ["envolvimento,incontável,alheio", "envolvimento em profusão que passa despercebido por quem está alheio"]
+  ["combinação,veículo,rodas", "veículo híbrido que combina a robustez de um jipe com a estrutura de um triciclo"],
+  ["fusão,picape,triciclo", "fusão mecânica entre um jipe e um triciclo resultando em um meio de transporte excêntrico"],
+  ["mistureba,caminhonete,triciclo", "mistureba motorizada entre um triciclo e um jipe off-road"]
 ]
 
 const wordSet = [ ...original, ...similars ].map(format)

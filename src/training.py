@@ -14,7 +14,7 @@ print("Preprocessing...")
 
 # 1.1 Read dataset and store it as json
 cwd = os.path.dirname(__file__)
-file_path = os.path.join(cwd, "data", "definitions.json")
+file_path = os.path.join(cwd, "data", "definitions-2.json")
 with open(file_path, "r", encoding="utf-8") as f:
   data = json.load(f)
 print("Data loaded!")

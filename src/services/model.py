@@ -7,7 +7,7 @@ from services.transformer import TinyTransformer
 # Internal constants for file paths
 _MODEL_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model")
 _VOCAB_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
-_MODEL_PATH = os.path.join(_MODEL_DIR, "rellow.pt")
+_MODEL_PATH = os.path.join(_MODEL_DIR, "rellow-2.pt")
 _VOCAB_PATH = os.path.join(_VOCAB_DIR, "vocab.json")
 
 # Internal device selection

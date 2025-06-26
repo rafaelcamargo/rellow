@@ -41,7 +41,7 @@ def main():
     model, vocab, inv_vocab = load_model()
     
     # Example usage
-    words = ["carro", "frio", "borracha"]
+    words = ["muito", "grande", "imenso"]
     result = generate_word(words, model, vocab, inv_vocab)
     print(f"Input words: {', '.join(words)}")
     print(f"Generated: {result}")

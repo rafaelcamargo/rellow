@@ -5,7 +5,7 @@ const { permute } = require('./permutation');
 const _public = {};
 
 _public.saveDefinition = (words, definition) => {
-  const filepath = path.join(__dirname, '../data/definitions.json');
+  const filepath = path.join(__dirname, '../data/definitions-2.json');
   const definitions = JSON.parse(fs.readFileSync(filepath, 'utf-8'));
   const newDefinitions = {
     ...definitions,
